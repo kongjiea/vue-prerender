@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <Header></Header>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -84,12 +85,16 @@
 </template>
 
 <script>
+  import Header from './Header.vue';
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components:{
+    Header
   }
 }
 </script>
